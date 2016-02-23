@@ -12,10 +12,7 @@ html {
 body {
     /* slight gray on whole page to see what's covered */
     background-color: LightGray;
-    /*font-family: 'Playfair Display', serif;
-    font-family: 'Unica One', cursive;
-    font-family: 'Fauna One', serif;
-    */
+    font-family: 'Roboto Slab', serif;
 }
 
 div {
@@ -27,16 +24,16 @@ div {
 
 .top-navigation {
     position: fixed;
-    /*z-index: 9999;*/
+    z-index: 9999;
     width: 100%;
     font-family: 'Unica One', cursive;
     text-transform: uppercase;
+    background-color: #0F1014; /*transparent then turn solid at a certain scroll point, revisit with jquery later*/
 }
 
 .top-navigation > .content {
-    height: 5.6rem;
-    background-color: transparent;
-    width: 80%;
+    height: 4.5rem;
+    width: 100%; /*when transparent scrolling works, also change this down to 80% */
     margin: auto;
 }
 
@@ -54,19 +51,23 @@ div {
 }
 
 .instagram {
-    margin-left: 50rem;
+    margin-left: 68rem;
 }
 
 .github, .linkedin {
     margin-left: 1.2rem;
 }
 
-.nav-list li{
+.nav-list li {
     display: inline-block;
 }
 
+.nav-list a:link, .nav-list a:visited {
+    text-decoration: none;
+    color: #ECCF05;
+}
 
-.nav-list li:hover{
+.nav-list a:hover {
     cursor: pointer;
     color: #8D2218;
 }
@@ -93,12 +94,103 @@ div {
 .about-me {
     font-size: 1rem;
     color: #FFF;
-    font-family: 'Roboto Slab', serif;
     text-align: center;
     margin-top: 2rem;
 }
 
 hr {
-    color: #FFF;
+    color: #584D04;
     width: 60%;
 }
+
+/* Project section */
+.my-projects {
+    background-color: #223442;
+}
+
+.my-projects > .content {
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: #FFF; /*#FFE6E6;*/
+}
+
+.my-projects > .content > h2, h3 {
+    color: #ECCF05;
+}
+
+.my-projects > .content > h2 {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 2rem 2rem;
+    border: 1px solid #ECCF05;
+    font-family: 'Playfair Display', cursive;
+    text-transform: uppercase;
+}
+
+.project1, .project2, .project3, .more {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.project1 > h3, .project3 > h3 {
+    text-align: left;
+}
+
+.project1 > img, .project3 > img {
+    margin-right: 2rem;
+    float: left;
+}
+
+.project2 > h3 {
+    text-align: right;
+}
+
+.project2 > img {
+    margin-left: 2rem;
+    float: right;
+}
+
+.more {
+    text-align: center;
+}
+
+/* Footer section */
+.citations > .content {
+    color: #333333;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+.citations a:link, .citations a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #8D2218;
+}
+
+.citations a:hover {
+    cursor: pointer;
+    color: #8F3C67;
+}
+
+/* Responsive mobile first */
+@media only screen and (max-width: 500px) {
+    .masthead-heading {
+        font-size: 3em;
+    }   
+    .masthead {
+        padding: 3em 0;
+    }   
+    .content-footer {
+        font-size: 50%;
+    }   
+}
+
+
+
