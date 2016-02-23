@@ -176,13 +176,18 @@ hr {
 
 /* Responsive mobile first */
 @media only screen and (max-width: 500px) {
-    .masthead-heading {
+    .top-navigation {
         font-size: 3em;
+    }
+
+    .top-navigation > .content {
+        width: 80%;
     }   
-    .masthead {
+    
+    .top-navigation {
         padding: 3em 0;
     }   
-    .content-footer {
+    .citations {
         font-size: 50%;
     }   
 }
