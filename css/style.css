@@ -15,11 +15,6 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-div {
-    /* adding a border around all 'div's to see where they sit */
-    border: 1px solid Chocolate;
-}
-
 /* Nav bar declarations */
 
 .top-navigation {
@@ -42,7 +37,7 @@ div {
     color: #ECCF05;
 }
 
-.home {
+.home > a {
     color: #FFF;
 }
 
@@ -116,11 +111,11 @@ hr {
     color: #FFF; /*#FFE6E6;*/
 }
 
-.my-projects > .content > h2, h3 {
+.my-projects > .content > a > h2, h3 {
     color: #ECCF05;
 }
 
-.my-projects > .content > h2 {
+.my-projects > .content > a > h2 {
     text-align: center;
     width: 40%;
     margin: auto;
@@ -141,7 +136,7 @@ hr {
     text-align: left;
 }
 
-.project1 > img, .project3 > img {
+.project1 > a > img, .project3 > a > img {
     margin-right: 2rem;
     float: left;
 }
@@ -150,7 +145,7 @@ hr {
     text-align: right;
 }
 
-.project2 > img {
+.project2 > a > img {
     margin-left: 2rem;
     float: right;
 }
