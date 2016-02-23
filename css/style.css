@@ -36,6 +36,8 @@ div {
 .top-navigation > .content {
     height: 5.6rem;
     background-color: transparent;
+    width: 80%;
+    margin: auto;
 }
 
 .nav-list {
@@ -47,6 +49,18 @@ div {
     color: #FFF;
 }
 
+.projects {
+    margin-left: 1.2rem;
+}
+
+.instagram {
+    margin-left: 50rem;
+}
+
+.github, .linkedin {
+    margin-left: 1.2rem;
+}
+
 .nav-list li{
     display: inline-block;
 }
@@ -55,3 +69,13 @@ div {
     cursor: pointer;
     color: #ECCF05;
 };
+
+/* Main section */
+.main-section {
+    background-image: url("../images/main-background.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    height: 45rem;
+}
