@@ -78,5 +78,27 @@ div {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
-    height: 45rem;
+    height: 50rem;
+}
+
+.monogram {
+    font-size: 22rem;
+    color: #ECCF05;
+    font-family: 'Playfair Display', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 0 0 0;
+}
+
+.about-me {
+    font-size: 1rem;
+    color: #FFF;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+hr {
+    color: #FFF;
+    width: 60%;
 }
