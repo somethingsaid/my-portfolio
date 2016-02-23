@@ -27,7 +27,7 @@ div {
 
 .top-navigation {
     position: fixed;
-    z-index: 9999;
+    /*z-index: 9999;*/
     width: 100%;
     font-family: 'Unica One', cursive;
     text-transform: uppercase;
@@ -42,7 +42,7 @@ div {
 
 .nav-list {
     font-size: 1.5rem;
-    color: #584D04;
+    color: #ECCF05;
 }
 
 .home {
@@ -65,14 +65,15 @@ div {
     display: inline-block;
 }
 
+
 .nav-list li:hover{
     cursor: pointer;
-    color: #ECCF05;
-};
+    color: #8D2218;
+}
 
 /* Main section */
 .main-section {
-    background-image: url("../images/main-background.jpg");
+    background-image: url("../images/black_background.jpg");
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
