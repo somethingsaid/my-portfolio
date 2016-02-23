@@ -1,1 +1,57 @@
 /* My portfolio's CSS stylesheet */
+/* Standard declarations */
+html {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* slight gray on whole page to see what's covered */
+    background-color: LightGray;
+    /*font-family: 'Playfair Display', serif;
+    font-family: 'Unica One', cursive;
+    font-family: 'Fauna One', serif;
+    */
+}
+
+div {
+    /* adding a border around all 'div's to see where they sit */
+    border: 1px solid Chocolate;
+}
+
+/* Nav bar declarations */
+
+.top-navigation {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+}
+
+.top-navigation > .content {
+    height: 5.6rem;
+    background-color: transparent;
+}
+
+.nav-list {
+    font-size: 1.5rem;
+    color: #584D04;
+}
+
+.home {
+    color: #FFF;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+.nav-list li:hover{
+    cursor: pointer;
+    color: #ECCF05;
+};
