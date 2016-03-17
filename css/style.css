@@ -10,47 +10,23 @@ html {
 }
 
 body {
-    /* slight gray on whole page to see what's covered */
-    background-color: LightGray;
     font-family: 'Roboto Slab', serif;
 }
 
 /* Nav bar declarations */
-
-.top-navigation {
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
+#top-nav {
     font-family: 'Unica One', cursive;
     text-transform: uppercase;
-    background-color: #0F1014; /*transparent then turn solid at a certain scroll point, revisit with jquery later*/
 }
 
-.top-navigation > .content {
-    height: 4.5rem;
-    width: 100%; /*when transparent scrolling works, also change this down to 80% */
-    margin: auto;
+
+#top-nav .container-fluid {
+    background-color: #141414;
 }
 
 .nav-list {
     font-size: 1.5rem;
     color: #ECCF05;
-}
-
-.home > a {
-    color: #FFF;
-}
-
-.projects {
-    margin-left: 1.2rem;
-}
-
-.instagram {
-    margin-left: 68rem;
-}
-
-.github, .linkedin {
-    margin-left: 1.2rem;
 }
 
 .nav-list li {
